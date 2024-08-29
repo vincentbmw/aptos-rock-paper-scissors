@@ -1,38 +1,119 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #222;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #333;
 }
 
-.App-link {
-  color: #61dafb;
+.Navbar {
+  display: flex;
+  justify-content: space-between; /* Distribute elements evenly */
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #444; /* Darker background for the navbar */
+  margin-bottom: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
+
+.Navbar-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem; /* Smaller font for info */
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  color: #222;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+p {
+  margin: 5px;
+  font-size: 1.2rem;
+}
+
+h1 {
+  /* Removed as it's now in the navbar */
+}
+
+.ScoreBoard {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.GameBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.WalletInfo {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 480px) {
+  .Navbar {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: flex-start;
+  }
+  .Navbar-info {
+    margin-top: 5px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+} 
