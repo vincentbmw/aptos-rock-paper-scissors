@@ -1,7 +1,5 @@
-/* Font */
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
 
-/* Variables */
 :root {
   --light-text: #ffffff;
   --dark-text: hsl(229, 25%, 31%);
@@ -34,7 +32,6 @@ body {
   overflow: hidden;
 }
 
-/* Main Content */
 .gameboard-container {
   position: relative;
   max-width: 700px;
@@ -81,7 +78,6 @@ body {
   opacity: 0.8;
 }
 
-/* Game */
 .game {
   position: relative;
   display: grid;
@@ -93,6 +89,7 @@ body {
   height: 30rem;
   padding-top: 2rem;
 }
+
 .game::before {
   content: "";
   position: absolute;
@@ -111,6 +108,7 @@ body {
   background: none;
   cursor: pointer;
 }
+
 .choice {
   position: relative;
   width: 8rem;
@@ -121,6 +119,7 @@ body {
   place-items: center;
   box-shadow: inset 0 0.5rem var(--shadow-light);
 }
+
 .choice::before,
 .choice::after {
   content: "";
@@ -151,10 +150,12 @@ body {
   background: linear-gradient(to bottom, var(--paper-1), var(--paper-2));
   box-shadow: 0 0.5rem var(--shadow-med), 0 0.5rem var(--paper-2);
 }
+
 .choice.scissors::before {
   background: linear-gradient(to bottom, var(--scissors-1), var(--scissors-2));
   box-shadow: 0 0.5rem var(--shadow-med), 0 0.5rem var(--scissors-2);
 }
+
 .choice.rock::before {
   background: linear-gradient(to bottom, var(--rock-1), var(--rock-2));
   box-shadow: 0 0.5rem var(--shadow-med), 0 0.5rem var(--rock-2);
@@ -163,105 +164,15 @@ body {
 .choice-btn[data-choice="paper"] {
   grid-area: paper;
 }
+
 .choice-btn[data-choice="scissors"] {
   grid-area: scissors;
 }
+
 .choice-btn[data-choice="rock"] {
   grid-area: rock;
 }
 
-/* .results {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  place-items: center;
-  grid-template-areas:
-    "you-title . ai-title"
-    "you-picked result-winner ai-picked";
-  max-width: 1000px;
-  margin: 0 auto;
-  gap: 1rem; 
-}
-
-.results__heading {
-  font-size: 1.5rem;
-  letter-spacing: 0.1em;
-  padding: 2rem 0 1rem;
-}
-
-.results__result {
-  min-width: 12rem;
-  min-height: 12rem;
-  border-radius: 50%;
-  transform: scale(1.2);
-  z-index: -1;
-}
-
-.results h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #fff;
-}
-
-.results .play-again {
-  font-size: small;
-  padding: 0.5rem 1.2rem; 
-  border-radius: 8px; 
-  background-color: #1e2949;
-  color: white;
-  border: 2px solid var(--outline);
-  border-radius: 0.6rem;
-  cursor: pointer;
-  font-family: inherit; 
-  text-transform: inherit;
-  font-size: 1.07rem;
-  letter-spacing: 0.1em;
-}
-
-.play-again:hover {
-  background-color: white;
-  color:#1e2949;
-}
-
-.results__heading:first-of-type {
-  grid-area: you-title;
-}
-.results__heading:last-of-type {
-  grid-area: ai-title;
-}
-.results__result:first-of-type {
-  grid-area: you-picked;
-}
-.results__result:last-of-type {
-  grid-area: ai-picked;
-}
-
-.results__winner {
-  grid-area: result-winner;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  place-items: center;
-}
-
-.results__text {
-  padding-bottom: 1rem;
-}
-
-.winner .choice::after {
-  box-shadow: 0 0 0 40px #293251, 0 0 0 80px #232c4b, 0 0 0 130px #1e2949;
-  animation: winner 1s ease forwards;
-}
-
-@keyframes winner {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-} */
-
-/* Results */
 .results {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
@@ -319,12 +230,15 @@ body {
 .results__heading:first-of-type {
   grid-area: you-title;
 }
+
 .results__heading:last-of-type {
   grid-area: ai-title;
 }
+
 .results__result:first-of-type {
   grid-area: you-picked;
 }
+
 .results__result:last-of-type {
   grid-area: ai-picked;
 }
@@ -355,7 +269,6 @@ body {
   }
 }
 
-/* Button */
 .wallet-button {
   position: fixed;
   top: 41%;
@@ -419,7 +332,6 @@ body {
   color:#1e2949;
 }
 
-/* Footer */
 .footer {
   position: absolute;
   width: 100%;
@@ -437,7 +349,6 @@ body {
   text-decoration: none;
 }
 
-/* Utilities */
 .preload * {
   transition: none;
 }
