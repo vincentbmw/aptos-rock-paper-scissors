@@ -1,7 +1,7 @@
 ## Rock-Paper-Scissors: A Blockchain-Powered Game 
 
 This project presents a Rock-Paper-Scissors game implemented on the Aptos blockchain!  Engage in classic gameplay with a twist – all your moves are recorded and verified on a decentralized ledger for a truly transparent and secure experience.
-![plot](https://github.com/vincentbmw/aptos-rock-paper-scissors/blob/branch3/src/assetsReadme/choose.png) 
+![plot](https://github.com/vincentbmw/aptos-rock-paper-scissors/blob/branch3/src/assetsReadme/home.png) 
 
 **Tech Stack:**
 
@@ -20,14 +20,14 @@ This project presents a Rock-Paper-Scissors game implemented on the Aptos blockc
 **How to Play:**
 
 1. **Connect Your Wallet:** Ensure you have an <b>Petra Wallet</b> with <b>Testnet</b> Network.<br />
-![plot](src\assetsReadme\connectWallet.png)  
+![plot](https://github.com/vincentbmw/aptos-rock-paper-scissors/blob/branch3/src/assetsReadme/connectWallet.png)
 2. **Start a Game:** Click the "Start Game" button to initiate a new round.<br />
-![plot](src\assetsReadme\startGame.png) 
+![plot](https://github.com/vincentbmw/aptos-rock-paper-scissors/blob/branch3/src/assetsReadme/startGame.png)
 3. **Make Your Move:**  Select Rock, Paper, or Scissors by clicking the corresponding button.
-![plot](src\assetsReadme\choose.png) 
+![plot](https://github.com/vincentbmw/aptos-rock-paper-scissors/blob/branch3/src/assetsReadme/choose.png)
 4. **Results:**  The game automatically determines the winner based on the rules of Rock-Paper-Scissors. The results and your updated score are recorded on the blockchain.
 5. **Play Again:**  Click "Play Again" to start another round!
-![plot](src\assetsReadme\final.png) 
+![plot](https://github.com/vincentbmw/aptos-rock-paper-scissors/blob/branch3/src/assetsReadme/final.png)
 
 **Getting Started:**
 
