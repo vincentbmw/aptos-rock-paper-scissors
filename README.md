@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+## Rock-Paper-Scissors: A Blockchain-Powered Game 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project presents a Rock-Paper-Scissors game implemented on the Aptos blockchain!  Engage in classic gameplay with a twist – all your moves are recorded and verified on a decentralized ledger for a truly transparent and secure experience.
 
-## Available Scripts
+**Tech Stack:**
 
-In the project directory, you can run:
+* **Frontend:** React
+* **Backend:** Aptos Blockchain
+* **Blockchain SDK:** Aptos Labs Wallet Adapter
 
-### `npm start`
+**Features:**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* **Decentralized Gameplay:** All game actions (starting, making moves, and determining results) are handled on the Aptos blockchain, ensuring fairness and immutability.
+* **Wallet Integration:** Use your Aptos wallet to connect and play the game securely.
+* **Scorekeeping:**  Track your wins and losses as you play, your score is stored on the blockchain.
+* **Intuitive UI:**  Enjoy a user-friendly interface with clear instructions and visual feedback.
+* **Play Again:**  Challenge yourself or your friends to another round with the "Play Again" button.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**How to Play:**
 
-### `npm test`
+1. **Connect Your Wallet:** Ensure you have an Aptos wallet set up and connected to the frontend.
+2. **Start a Game:** Click the "Start Game" button to initiate a new round.
+3. **Make Your Move:**  Select Rock, Paper, or Scissors by clicking the corresponding button.
+4. **Results:**  The game automatically determines the winner based on the rules of Rock-Paper-Scissors. The results and your updated score are recorded on the blockchain.
+5. **Play Again:**  Click "Play Again" to start another round!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Getting Started:**
 
-### `npm run build`
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/rock-paper-scissors 
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install dependencies:**
+   ```bash
+   cd rock-paper-scissors 
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Start the development server:**
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Connect your Aptos wallet:**  Open your browser to the URL provided in your terminal. Connect your Aptos wallet to the game.
 
-### `npm run eject`
+**Contributing:**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Contributions are always welcome! Please feel free to open issues or submit pull requests.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**License:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This project is licensed under the MIT License.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Enjoy the Game!** 
