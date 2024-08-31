@@ -83,33 +83,6 @@ const finalizeGameResults = async (accountAddress: string, signAndSubmitTransact
   }
 };
 
-// const getGameResults = async (accountAddress: string) => {
-//   try {
-//     const response = await axios.post(
-//       'https://fullnode.testnet.aptoslabs.com/v1/view',
-//       {
-//         function: `0x7ca56fbfdbb012a325706dcaf0f125e3a0fb1cec583291e013fac893de0ed4b9::RockPaperScissors::get_game_results`,
-//         type_arguments: [],
-//         arguments: [accountAddress],
-//       },
-//       {
-//         params: {
-//           ledger_version: '',
-//         },
-//         headers: {
-//           'Content-Type': 'application/json',
-//           Accept: 'application/json, application/x-bcs',
-//         },
-//       }
-//     );
-//     console.log(response.data);
-//     return response.data;
-//   } catch (error) {
-//     console.error('Error getting game results:', error);
-//     throw error;
-//   }
-// };
-
 const getGameResults = async (accountAddress: string) => {
   try {
     const result = await client.view({
@@ -124,10 +97,25 @@ const getGameResults = async (accountAddress: string) => {
   }
 };
 
+const getComputerMove = async (accountAddress: string) => {
+  try {
+    const result = await client.view({
+      function: `0x7ca56fbfdbb012a325706dcaf0f125e3a0fb1cec583291e013fac893de0ed4b9::RockPaperScissors::get_computer_move`,
+      type_arguments: [],
+      arguments: [accountAddress],  
+    });
+    return parseInt(result[0].toString());
+  } catch (error) {
+    console.error("Error getting game results:", error);
+    throw error;
+  }
+};
+
 export {
   startGame,
   setPlayerMove,
   randomlySetComputerMove,
   finalizeGameResults,
   getGameResults,
+  getComputerMove,
 };
