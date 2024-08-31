@@ -1,7 +1,7 @@
 ## Rock-Paper-Scissors: A Blockchain-Powered Game 
 
 This project presents a Rock-Paper-Scissors game implemented on the Aptos blockchain!  Engage in classic gameplay with a twist – all your moves are recorded and verified on a decentralized ledger for a truly transparent and secure experience.
-![plot](src\assetsReadme\home.png) 
+[alt text]([src\assetsReadme\home.png](https://github.com/vincentbmw/aptos-rock-paper-scissors/blob/branch3/src/assetsReadme/choose.png)) 
 
 **Tech Stack:**
 
