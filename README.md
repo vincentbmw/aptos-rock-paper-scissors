@@ -30,6 +30,12 @@ This project presents a Rock-Paper-Scissors game implemented on the Aptos blockc
 5. **Play Again:**  Click "Play Again" to start another round!
 ![plot](https://github.com/vincentbmw/aptos-rock-paper-scissors/blob/master/src/assetsReadme/final.png)
 
+**Notes:**
+- 1 = Draw
+- 2 = Win
+- 3 = Lose
+
+
 **Getting Started:**
 
 1. **Clone the repository:**
