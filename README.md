@@ -13,9 +13,10 @@ This project presents a Rock-Paper-Scissors game implemented on the Aptos blockc
 
 * **Decentralized Gameplay:** All game actions (starting, making moves, and determining results) are handled on the Aptos blockchain, ensuring fairness and immutability.
 * **Wallet Integration:** Use your Petra wallet to connect and play the game securely.
-* **Scorekeeping:**  Track your wins and losses as you play(Lose =- 1, Win =+ 1)
+* **Scorekeeping:**  Track your wins and losses as you play(Lose =- 1, Win =+ 1), your score will be stored realtime in blockchain 
 * **Intuitive UI:**  Enjoy a user-friendly interface with clear instructions and visual feedback.
 * **Play Again:**  Challenge yourself or your friends to another round with the "Play Again" button.
+* **Disconnect:**  You can disconnect or done playing without worrying your account still log in
 
 **How to Play:**
 
