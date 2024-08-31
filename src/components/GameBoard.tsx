@@ -41,6 +41,8 @@ const GameBoard: React.FC = () => {
 
                 const result = await getGameResults(account.address);
                 const computerMove = await getComputerMove(account.address);
+                const playerScore = await getPlayerScore(account.address);
+                setScore(playerScore);
                 setComputerMove(computerMove);
 
                 if (result === 2) {
