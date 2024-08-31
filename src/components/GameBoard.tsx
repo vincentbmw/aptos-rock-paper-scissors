@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useWallet } from '@aptos-labs/wallet-adapter-react';
-import { startGame, setPlayerMove, randomlySetComputerMove, finalizeGameResults, getGameResults, getComputerMove, getScore } from '../api/gameService';
+import { startGame, setPlayerMove, randomlySetComputerMove, finalizeGameResults, getGameResults, getComputerMove, getPlayerScore } from '../api/gameService';
 import logo from '../assets/logo.svg';
 import rock from '../assets/rock.svg';
 import paper from '../assets/paper.svg';
@@ -20,7 +20,7 @@ const GameBoard: React.FC = () => {
         if (account) {
             try {
                 await startGame(account.address, signAndSubmitTransaction);
-                const playerScore = await getScore(account.address);
+                const playerScore = await getPlayerScore(account.address);
                 setScore(playerScore);
                 setGameStarted(true);
                 setPlayerMv(null);
@@ -42,7 +42,6 @@ const GameBoard: React.FC = () => {
                 const result = await getGameResults(account.address);
                 const computerMove = await getComputerMove(account.address);
                 setComputerMove(computerMove);
-
 
                 if (result === 2) {
                     setGameResult('Player wins!');

@@ -83,20 +83,6 @@ const finalizeGameResults = async (accountAddress: string, signAndSubmitTransact
   }
 };
 
-const getGameResults = async (accountAddress: string) => {
-  try {
-    const result = await client.view({
-      function: `0x7ca56fbfdbb012a325706dcaf0f125e3a0fb1cec583291e013fac893de0ed4b9::RockPaperScissors::get_game_results`,
-      type_arguments: [],
-      arguments: [accountAddress],
-    });
-    return result[0];
-  } catch (error) {
-    console.error("Error getting game results:", error);
-    throw error;
-  }
-};
-
 const getComputerMove = async (accountAddress: string) => {
   try {
     const result = await client.view({
@@ -111,7 +97,21 @@ const getComputerMove = async (accountAddress: string) => {
   }
 };
 
-const getScore = async (accountAddress: string) => {
+const getGameResults = async (accountAddress: string) => {
+  try {
+    const result = await client.view({
+      function: `0x7ca56fbfdbb012a325706dcaf0f125e3a0fb1cec583291e013fac893de0ed4b9::RockPaperScissors::get_game_results`,
+      type_arguments: [],
+      arguments: [accountAddress],
+    });
+    return result[0];
+  } catch (error) {
+    console.error("Error getting game results:", error);
+    throw error;
+  }
+};
+
+const getPlayerScore = async (accountAddress: string) => {
   try {
     const result = await client.view({
       function: `0x7ca56fbfdbb012a325706dcaf0f125e3a0fb1cec583291e013fac893de0ed4b9::RockPaperScissors::get_player_score`,
@@ -132,5 +132,5 @@ export {
   finalizeGameResults,
   getGameResults,
   getComputerMove,
-  getScore
+  getPlayerScore
 };
